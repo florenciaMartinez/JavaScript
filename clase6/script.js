@@ -103,10 +103,11 @@ function agregarAlCarrito(id, cantidad){
     let compra1 = new ItemCompra(buscarProducto.id, buscarProducto.nombre, cantidad,buscarProducto.precio)
     personaCompra.carrito.push(compra1)
 }
-
+// simulo una compra en base a un id y una cantidad
 agregarAlCarrito(1,3);
 console.log(personaCompra);
-console.log(personaCompra.carrito[0].obtenerTotal())
+//busco el total del item, tomando p*q
+console.log("Este es el total del item " + personaCompra.carrito[0].obtenerTotal())
 
 
 
