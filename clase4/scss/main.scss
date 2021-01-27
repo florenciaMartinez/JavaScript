@@ -1,0 +1,759 @@
+@import "vars.scss";
+
+/*aplicado a todos los html*/
+body {
+    max-height: 2500px;
+    min-height: 1000px;
+    padding-bottom: $tamanio10;
+    position: relative;
+}
+footer .formatoNewsletter {
+    margin-top: 100px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+/*color de todos los titulos principales*/
+.titulosPrincipales {
+    @include formato-titulos;
+}
+.titulosFondo{
+    @include titulos-fondo;
+}
+
+/*Aplicado al NAV*/
+.estiloNav li {
+    background-color: $color-principal;
+    height: ($tamanio10*7)+1;
+    width: 200px;
+    @include contenido-centrado;
+
+    a {
+        color: $color-blanco;
+        &:hover{
+            @include fondo-purple-texto-blanco;
+        }
+    }
+
+    &:hover {
+        @include fondo-purple-texto-blanco;
+    }
+}
+
+.estiloBarra {
+    background-color: $color-principal;
+}
+.estiloSubmenu {
+    background-color: $color-principal;
+    padding: 0;
+    width: 100%;
+}
+
+.contenedorNav {
+    border: solid 1px $color-principal;
+    padding: 0%;
+}
+
+.menuHamburguesa {
+    background-color:$color-principal;
+}
+
+.imagenMenuHamburguesa {
+    background-image: $imagen-menu-hamburguesa;
+}
+
+.estiloHeader {
+    padding: 0;
+}
+
+/*Aplicado al footer*/
+.ordenFooter {
+    background-color: $color-principal;
+    margin-top: $tamanio10;
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+.derechosReservados {
+   @include fuente-montserrat-color-blanco;
+    font-size: 80%;
+}
+
+.newsletter{
+    height: 200px;
+    display: flex;
+    align-items: center;
+}
+
+.newsletterMinSize{
+    background-image: $imagen-fondo-titulos;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    h3{
+        @include fuente-montserrat-color-blanco;
+        font-size: 200%;
+        text-align: center;
+    }
+}
+.formMinSize{
+    width: 140px;
+}
+.tituloNewsletter {
+   @include contenido-centrado;
+    height: 200px;
+    h3 {
+    @include fuente-montserrat-color-blanco;
+    text-align: center;
+    font-size: 150%;
+}
+}
+.formatoNewsletter{
+    height: 200px;
+    margin-right: 0px;
+    margin-left: 0px;
+    margin-top: $tamanio10;
+    background-image: $imagen-fondo-titulos;
+}
+.estiloInput input {
+    height: 25px;
+}
+
+.estiloInputBst5{
+    margin-bottom: 1rem;
+    input {
+    height: 25px;
+    }
+}
+
+.footerMaxSize{
+    height: 150px;
+    background-color: $color-principal;
+}
+.botonNewsletter{
+    height: 80px;
+}
+.estiloRedes {
+    @include contenido-centrado;
+    flex-direction: column;
+
+    span {
+      @include fuente-montserrat-color-blanco;
+        font-size: 150%;
+    }
+
+    ul {
+        display: flex;
+        padding: 0;
+        margin: 0;
+        margin-right: 90px;
+        li {
+            list-style: none;
+            padding: 20%;
+            transition: all 0.5s;
+            &:hover {
+                transform: scale(3, 3);
+            }
+            a {
+                color:$color-blanco;
+            }
+        }
+    }
+}
+.estiloRedesBstp5 {
+    @include contenido-centrado;
+    flex-direction: column;
+
+    span {
+      @include fuente-montserrat-color-blanco;
+        font-size: 150%;
+    }
+
+    ul {
+        display: flex;
+        padding: 0;
+        margin: 0;
+        margin-right: 160px;
+        li {
+            list-style: none;
+            padding: 50%;
+            transition: all 0.5s;
+            &:hover {
+                transform: scale(3, 3);
+            }
+            a {
+                color:$color-blanco;
+            }
+        }
+    }
+}
+
+
+/*Boton de whatsApp*/
+.btn-whatsapp {
+    @include whatsapp-flotante;
+    img{
+        width: 40px;
+    }
+}
+
+/*Aplicado al index*/
+.subtitulo {
+    font-size: 120%;
+    font-family:$fuente-Hind;
+    text-align: end;
+    margin-right: 300px;
+    background-color: rgb(194, 190, 190);
+    margin-bottom: 30px;
+    padding-right: 30px;
+    color: $color-blanco;
+}
+.ubicacionCards{
+    margin-right: $tamanio10;
+    margin-left: $tamanio10;
+    width: 1325px;
+}
+.carouselMaxSize {
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.imagenesCarousel img {
+    width: 100%;
+}
+
+.animate__backInLeft {
+    animation-duration: 2s;
+}
+.tamanioCardsIndex {
+    display: flex;
+    align-items: center;
+    width: 325px;
+    margin: 0%;
+    border:none;
+    img{
+    width: 325px;
+    }
+    h5{
+        @include fuente-hind-color-purple;
+        font-size: 120%;
+    }
+    p{
+        @include fuente-hind-color-gris;
+    }
+}
+.contenedorCards{
+    padding: 0%;
+    margin: 0%;
+    border: none;
+    display: flex;
+    justify-content: center;
+}
+
+/*Banners Index*/
+.estiloBanners {
+    background-color: $color-principal;
+    a {
+        color: white;
+    }
+    .left {
+        position: relative;
+        &:before {
+            content: "";
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background-color:$color-blanco;
+            visibility: hidden;
+            transition: all 0.3s ease-in-out;
+        }
+        &:hover:before {
+            visibility: visible;
+            width: 100%;
+        }
+    }
+}
+.ubicacionBanners {
+    margin: 2%;
+}
+
+/*titulos de prod destacados Index*/
+.titulosProductosDestacados {
+    @include formato-titulos;
+}
+
+/*Aplicado a productos*/
+/*Estilo Modal*/
+.formatoModal{
+    background-color:$color-modal;
+    width: 100%;
+    border-radius: 0%;
+    color:$color-blanco;
+    margin-bottom: 5px;
+    &:hover{
+        background-color:$color-modal-hover;
+    }
+}
+
+.modalProductos{
+    background-color:$color-principal;
+    color: $color-blanco;
+}
+.tituloModal{
+    text-align: center;
+    font-family: $fuente-Hind;
+}
+.textoMoldal{
+    font-family: $fuente-Montserrat;
+    text-align: justify;
+}
+
+.animacionBotonModal:hover{
+    background-color: $color-purple;
+}
+/*estilos aside Categorias*/
+.formatoCategorias {
+    padding: 0px;
+    li {
+        color:$color-gris;
+        list-style-type: none;
+        margin: 10px 0px 10px 0px;
+        &:hover {
+            color: $color-blanco;
+        }
+    }
+}
+
+.tituloSecundarioCategorias {
+    @include fuente-montserrat-color-blanco;
+}
+
+/*aplicando grids*/
+
+.grillaProductos {
+    display: grid;
+    grid-template-areas:
+
+        "categorias productosGrilla productosGrilla productosGrilla"
+        "categorias productosGrilla productosGrilla productosGrilla"
+        "categorias productosDescuentos productosDescuentos productosDescuentos"
+        "categorias productosDescuentos productosDescuentos productosDescuentos";
+
+    grid-template-columns: 1fr 1fr 2fr 2fr;
+    grid-template-rows: $tamanio10*15 auto auto $tamanio10*15;
+    grid-column-gap: $tamanio10;
+    grid-row-gap: $tamanio10;
+}
+.seccionPrincipal {
+    grid-area: productosGrilla;
+}
+
+.categoriasAside {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    grid-area: categorias;
+    border: double 1px $color-principal;
+    flex-direction: column;
+
+    @if $color-aside==false {
+        background-color: $color-principal;
+    }
+    @else {
+        background-color: $color-purple;
+    }
+    h3 {
+        margin: 35px 0px 0px 0px;
+    }
+}
+.productosDescuentos {
+    grid-area: productosDescuentos;
+}
+.seccionImagenes {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.ImagenContenido {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    img {
+        width: 60%;
+        margin-top: $tamanio10*2;
+    }
+    p {
+        @include fuente-montserrat-color-gris;
+    }
+}
+
+.textoImagenContenido {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    color:$color-blanco;
+    background: rgba(0, 0, 0, 0.7);
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    i {
+        color:$color-principal;
+        font-size: 36px;
+    }
+    p {
+        padding: 30px;
+        font-weight: bold;
+    }
+    &:hover {
+        opacity: 0.8;
+    }
+}
+
+/*Animaciones de Productos*/
+.imagenAnimacion {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.imagenDescuentos {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.precioDescuento {
+    text-decoration: line-through;
+    background-color: $color-purple;
+}
+.logoNav {
+    animation-name: logo;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+@keyframes logo {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0.5
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/*aplicado a nosotros.html*/
+/*solo para el texto de notros porque es mas largo*/
+.textoPrincipalNosotros {
+    color: rgb(121, 121, 121);
+    text-align: justify;
+    line-height: 150%;
+    font-family: $fuente-Hind;
+    padding: $tamanio10*3;
+}
+
+.graciasNosotros {
+    @include fuente-montserrat-color-gris;
+    font-weight: bold;
+    font-size: 150%;
+    text-align: center;
+    letter-spacing: $tamanio10*2;
+}
+
+.imagenNosotros img {
+    width: $tamanio10*60;
+    padding: $tamanio10*2;
+}
+
+.animate__backInDown {
+    animation-duration: 2s;
+}
+
+.animate__rotateInDownRight {
+    animation-duration: 2s;
+}
+
+/*Aplicado a Preguntas Frecuentes*/
+.estiloAcordion{
+    font-family: $fuente-Montserrat;
+    font-weight: bold;
+
+    &:not(.collapsed){
+    background-color:$color-purple;
+    @include fuente-montserrat-color-gris;
+    font-weight: bold;
+    }
+    &:focus{
+        border-color: $color-purple;
+        box-shadow: none;
+    }
+}
+.cuerpoAcordion{
+   @include fuente-montserrat-color-gris;
+}
+
+/*Aplicado a Contactanos*/
+.wathsapp  a {
+  @include fuente-hind-color-blanco;
+  &:hover{
+      @include fondo-purple-texto-blanco;
+  }
+}    
+
+.ubicacionContacto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: $fuente-Hind;
+    background-color: #E7E7E6;
+    margin-top: $tamanio10;
+    color: black;
+    font-weight: lighter;
+    p {
+        margin: 0;
+        padding-bottom: 2px;
+    }
+    &:hover {
+        @include fondo-purple-texto-blanco;
+    }
+}
+
+.subtituloContacto p{
+    text-align: center;
+    font-size: 160%;
+    color:$color-gris;
+    font-family: $fuente-Montserrat;
+    background:$color-purple;
+    margin: 10px 102px 10px 102px;
+}
+.estiloFormulario{
+    background-color: $color-purple;
+    @include fuente-montserrat-color-gris;
+    font-size: 110%;
+}
+.eMailSize{
+    width: 100%;
+}
+.btnForm{
+    margin: $tamanio10;
+    background:$color-principal;
+    @include fuente-montserrat-color-blanco;
+    border: 0;
+}
+.textoContacto{
+    text-align: center;
+    color: $color-blanco;
+    background-color: $color-principal;
+    margin-top: $tamanio10;
+}
+
+/*Tamanio Celular*/
+@media (max-width: 575.98px) {
+    body {
+        padding-bottom: 0;
+    }
+    /*Barra de navigacion*/
+    .estiloNav{
+        position: relative;
+        font-size: 100%;
+        min-width: 21.5rem;
+        text-align: center;
+        position: 0;
+        li{
+            width:100%!important;
+        }
+    }
+    .logoNav img {
+        width: 200px;
+    }
+    .estiloSubmenu {
+        position: absolute!important;
+        font-size: 100%;
+        min-width: 21.5rem;
+        text-align: center;
+        position: 0;
+    }
+    /*Footer*/
+    footer {
+        position: relative;
+    }
+    .footerMaxSize {
+        display: none;
+    }
+    .estiloRedes {
+        display: flex;
+        justify-content: start;
+        margin-top: $tamanio10*2;
+
+        ul {
+            margin-right: 160px;
+
+            li {
+                padding: 30%;
+            }
+        }
+    }
+    .estiloRedesBstp5 {
+        display: flex;
+        justify-content: start;
+        margin-top: $tamanio10*2;
+
+        ul {
+            margin-right: 200px;
+
+            li {
+                padding: 70%;
+            }
+        }
+    }
+    .derechosReservados p {
+        margin-top: $tamanio10+2;
+    }
+
+    /*Aplicado al index*/
+    .subtitulo {
+        @include fuente-hind-color-gris;
+        font-size: 90%;
+        text-align: end;
+        background-color:rgb(194, 190, 190);
+        margin: 2%;
+    }
+    .tamanioCardsIndex{
+        margin-left: 30px;
+    }
+    .contenedorCards{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .carouselMaxSize {
+        display: none;
+    }
+    .ubicacionCards{
+        width: 100%;
+    }
+    /*Aplicado a todos los titulos menos en Index*/
+    .titulosFondo{
+        height: 240px;
+    }
+    /*Aplicado a Productos*/
+    .seccionImagenes {
+        display: grid;
+        grid-template-columns: auto;
+    }
+    .categoriasAside {
+        display: none;
+    }
+    .grillaProductos {
+        grid-template-areas:
+
+            "productosGrillaproductosGrilla"
+            " productosGrilla  productosGrilla"
+            "productosDescuentos productosDescuentos"
+            " productosDescuentos productosDescuentos";
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        grid-column-gap: 0;
+        grid-row-gap: $tamanio10;
+    }
+    /*Aplicado a Nosotros*/
+    .imagenNosotros img {
+        width: 385px;
+    }
+    /*Aplicado a Contactos*/
+    .subtituloContacto p{
+        font-size: 125%;
+        margin: 0px 0px 10px 0px;
+    }
+    .formatoNewsletter{
+        display: none;
+    }
+    .nosotrosTablet{
+        display: none;
+    }
+}
+
+/*Tamanio Tablet*/
+@media (min-width: 576px) and (max-width: 991.98px){
+    /*Aplicado al Index*/
+    .subtitulo{
+        margin-right: 90px;
+    }
+    .carouselMinSize {
+        display: none;
+    }
+    .tamanioCardsIndex img{
+        width: 100%;
+    }
+    .ubicacionCards {
+        margin-right: 0px;
+        margin-left: 0px;
+        width: 100%;
+    }
+    .contenedorCards{
+        display: flex;
+        justify-content: space-between;
+    }
+    .seccionProdDestacados{
+        margin: 10px;
+    }
+    /*Aplicado a Nosotros*/
+    .nosotrosSize{
+        display:none
+    }
+    .imagenNosotros img{
+        width: 100%;
+    }
+    /*Aplicado a todos los html*/
+    .footerMinSize {
+        display: none;
+    }
+    body {
+        padding-bottom: 0;
+    }
+    /*Barra de navigacion*/
+    .estiloNav{
+        position: relative;
+        font-size: 150%;
+        min-width: 21.5rem;
+        text-align: center;
+        position: 0;
+        li{
+            width:100%!important;
+        }
+    }
+    .logoNav img {
+        width: 200px;
+    }
+    .estiloSubmenu {
+        position: absolute!important;
+        font-size: 100%;
+        min-width: 21.5rem;
+        text-align: center;
+        position: 0;
+        width: 100%;
+    }
+}
+  
+/*Aplicado al resto de las medidas*/
+@media (min-width: 992px){
+    .footerMinSize {
+    display: none;
+    }
+    .carouselMinSize {
+    display: none;
+    }
+    .nosotrosTablet{
+    display:none;
+    }
+}
