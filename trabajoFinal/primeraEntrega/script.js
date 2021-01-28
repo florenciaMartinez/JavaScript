@@ -103,6 +103,8 @@ function actualizarStock(id, cantidad){
 
 personaCompra.carrito.forEach((el) => actualizarStock(el.idProducto, el.cantidad));
 
+let totalCarrito = personaCompra.carrito.reduce((acc, el) => acc + el.obtenerTotal(), 0)
+
 
 //simulador de cuotas con interes
 function calcularCuotas(cuotas) {
