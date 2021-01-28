@@ -84,7 +84,7 @@ function agregarAlCarrito(id, cantidad){
     if (cantidad > producto.stock){
         alert("No tenemos esa cantidad, ingresa una menor")
     }else{
-    let compra1 = new ItemCompra(producto.id, producto.nombre, cantidad,producto.precio)
+    let compra1 = new ItemCompra(producto.id, producto.nombre, cantidad, producto.precio)
     personaCompra.carrito.push(compra1)
     }
 }
@@ -101,7 +101,7 @@ function actualizarStock(id, cantidad){
     console.log(productoEncontrado.stock)
 } 
 
-personaCompra.carrito.forEach((el) => actualizarStock(el.id, el.cantidad));
+personaCompra.carrito.forEach((el) => actualizarStock(el.idProducto, el.cantidad));
 
 
 //simulador de cuotas con interes
