@@ -1,0 +1,678 @@
+/*Variables*/
+/*mixin*/
+/*aplicado a todos los html*/
+body {
+  max-height: 2500px;
+  min-height: 1000px;
+  padding-bottom: 10px;
+  position: relative; }
+
+footer .formatoNewsletter {
+  margin-top: 100px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0; }
+
+/*color de todos los titulos principales*/
+.titulosPrincipales {
+  color: darkcyan;
+  text-align: center;
+  font-size: 170%;
+  font-family: "Montserrat", sans-serif;
+  margin: 2%;
+  font-weight: bold; }
+
+.titulosFondo {
+  color: white;
+  background-image: url("../imagenes/ejemplo10.png");
+  text-align: center;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold; }
+
+/*Aplicado al NAV*/
+.estiloNav li {
+  background-color: darkcyan;
+  height: 71px;
+  width: 200px;
+  justify-content: center;
+  align-items: center;
+  display: flex; }
+  .estiloNav li a {
+    color: white; }
+    .estiloNav li a:hover {
+      background-color: #e2d2c7;
+      color: white; }
+  .estiloNav li:hover {
+    background-color: #e2d2c7;
+    color: white; }
+
+.estiloBarra {
+  background-color: darkcyan; }
+
+.estiloSubmenu {
+  background-color: darkcyan;
+  padding: 0;
+  width: 100%; }
+
+.contenedorNav {
+  border: solid 1px darkcyan;
+  padding: 0%; }
+
+.menuHamburguesa {
+  background-color: darkcyan; }
+
+.imagenMenuHamburguesa {
+  background-image: url("https://mdbootstrap.com/img/svg/hamburger2.svg?color=fff"); }
+
+.estiloHeader {
+  padding: 0; }
+
+/*Aplicado al footer*/
+.ordenFooter {
+  background-color: darkcyan;
+  margin-top: 10px;
+  margin-right: 0px;
+  margin-left: 0px; }
+
+.derechosReservados {
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  font-size: 80%; }
+
+.newsletter {
+  height: 200px;
+  display: flex;
+  align-items: center; }
+
+.newsletterMinSize {
+  background-image: url("../imagenes/ejemplo10.png");
+  height: 200px;
+  display: flex;
+  align-items: center; }
+  .newsletterMinSize h3 {
+    font-family: "Montserrat", sans-serif;
+    color: white;
+    font-size: 200%;
+    text-align: center; }
+
+.formMinSize {
+  width: 140px; }
+
+.tituloNewsletter {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  height: 200px; }
+  .tituloNewsletter h3 {
+    font-family: "Montserrat", sans-serif;
+    color: white;
+    text-align: center;
+    font-size: 150%; }
+
+.formatoNewsletter {
+  height: 200px;
+  margin-right: 0px;
+  margin-left: 0px;
+  margin-top: 10px;
+  background-image: url("../imagenes/ejemplo10.png"); }
+
+.estiloInput input {
+  height: 25px; }
+
+.estiloInputBst5 {
+  margin-bottom: 1rem; }
+  .estiloInputBst5 input {
+    height: 25px; }
+
+.footerMaxSize {
+  height: 150px;
+  background-color: darkcyan; }
+
+.botonNewsletter {
+  height: 80px; }
+
+.estiloRedes {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column; }
+  .estiloRedes span {
+    font-family: "Montserrat", sans-serif;
+    color: white;
+    font-size: 150%; }
+  .estiloRedes ul {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    margin-right: 90px; }
+    .estiloRedes ul li {
+      list-style: none;
+      padding: 20%;
+      transition: all 0.5s; }
+      .estiloRedes ul li:hover {
+        transform: scale(3, 3); }
+      .estiloRedes ul li a {
+        color: white; }
+
+.estiloRedesBstp5 {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column; }
+  .estiloRedesBstp5 span {
+    font-family: "Montserrat", sans-serif;
+    color: white;
+    font-size: 150%; }
+  .estiloRedesBstp5 ul {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    margin-right: 160px; }
+    .estiloRedesBstp5 ul li {
+      list-style: none;
+      padding: 50%;
+      transition: all 0.5s; }
+      .estiloRedesBstp5 ul li:hover {
+        transform: scale(3, 3); }
+      .estiloRedesBstp5 ul li a {
+        color: white; }
+
+/*Boton de whatsApp*/
+.btn-whatsapp {
+  display: block;
+  width: 50px;
+  height: 50px;
+  color: #fff;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  border-radius: 50%;
+  line-height: 10px;
+  text-align: center;
+  z-index: 999; }
+  .btn-whatsapp img {
+    width: 40px; }
+
+/*Aplicado al index*/
+.subtitulo {
+  font-size: 120%;
+  font-family: "Hind", sans-serif;
+  text-align: end;
+  margin-right: 300px;
+  background-color: #c2bebe;
+  margin-bottom: 30px;
+  padding-right: 30px;
+  color: white; }
+
+.ubicacionCards {
+  margin-right: 10px;
+  margin-left: 10px;
+  width: 1325px; }
+
+.carouselMaxSize {
+  margin-left: 0px;
+  margin-right: 0px; }
+
+.imagenesCarousel img {
+  width: 100%; }
+
+.animate__backInLeft {
+  animation-duration: 2s; }
+
+.tamanioCardsIndex {
+  display: flex;
+  align-items: center;
+  width: 325px;
+  margin: 0%;
+  border: none; }
+  .tamanioCardsIndex img {
+    width: 325px; }
+  .tamanioCardsIndex h5 {
+    font-family: "Hind", sans-serif;
+    color: #e2d2c7;
+    font-size: 120%; }
+  .tamanioCardsIndex p {
+    font-family: "Hind", sans-serif;
+    color: gray; }
+
+.contenedorCards {
+  padding: 0%;
+  margin: 0%;
+  border: none;
+  display: flex;
+  justify-content: center; }
+
+/*Banners Index*/
+.estiloBanners {
+  background-color: darkcyan; }
+  .estiloBanners a {
+    color: white; }
+  .estiloBanners .left {
+    position: relative; }
+    .estiloBanners .left:before {
+      content: "";
+      position: absolute;
+      width: 0;
+      height: 2px;
+      bottom: 0;
+      left: 0;
+      background-color: white;
+      visibility: hidden;
+      transition: all 0.3s ease-in-out; }
+    .estiloBanners .left:hover:before {
+      visibility: visible;
+      width: 100%; }
+
+.ubicacionBanners {
+  margin: 2%; }
+
+/*titulos de prod destacados Index*/
+.titulosProductosDestacados {
+  color: darkcyan;
+  text-align: center;
+  font-size: 170%;
+  font-family: "Montserrat", sans-serif;
+  margin: 2%;
+  font-weight: bold; }
+
+/*Aplicado a productos*/
+/*Estilo Modal*/
+.formatoModal {
+  background-color: #6b989f;
+  width: 100%;
+  border-radius: 0%;
+  color: white;
+  margin-bottom: 5px; }
+  .formatoModal:hover {
+    background-color: deepskyblue; }
+
+.modalProductos {
+  background-color: darkcyan;
+  color: white; }
+
+.tituloModal {
+  text-align: center;
+  font-family: "Hind", sans-serif; }
+
+.textoMoldal {
+  font-family: "Montserrat", sans-serif;
+  text-align: justify; }
+
+.animacionBotonModal:hover {
+  background-color: #e2d2c7; }
+
+/*estilos aside Categorias*/
+.formatoCategorias {
+  padding: 0px; }
+  .formatoCategorias li {
+    color: gray;
+    list-style-type: none;
+    margin: 10px 0px 10px 0px; }
+    .formatoCategorias li:hover {
+      color: white; }
+
+.tituloSecundarioCategorias {
+  font-family: "Montserrat", sans-serif;
+  color: white; }
+
+/*aplicando grids*/
+.grillaProductos {
+  display: grid;
+  grid-template-areas: "categorias productosGrilla productosGrilla productosGrilla"
+ "categorias productosGrilla productosGrilla productosGrilla"
+ "categorias productosDescuentos productosDescuentos productosDescuentos"
+ "categorias productosDescuentos productosDescuentos productosDescuentos";
+  grid-template-columns: 1fr 1fr 2fr 2fr;
+  grid-template-rows: 150px auto auto 150px;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px; }
+
+.seccionPrincipal {
+  grid-area: productosGrilla; }
+
+.categoriasAside {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  grid-area: categorias;
+  border: double 1px darkcyan;
+  flex-direction: column;
+  background-color: #e2d2c7; }
+  .categoriasAside h3 {
+    margin: 35px 0px 0px 0px; }
+
+.productosDescuentos {
+  grid-area: productosDescuentos; }
+
+.seccionImagenes {
+  display: grid;
+  grid-template-columns: auto auto auto; }
+
+.ImagenContenido {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: relative; }
+  .ImagenContenido img {
+    width: 60%;
+    margin-top: 20px; }
+  .ImagenContenido p {
+    font-family: "Montserrat", sans-serif;
+    color: gray; }
+
+.textoImagenContenido {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  color: white;
+  background: rgba(0, 0, 0, 0.7);
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; }
+  .textoImagenContenido i {
+    color: darkcyan;
+    font-size: 36px; }
+  .textoImagenContenido p {
+    padding: 30px;
+    font-weight: bold; }
+  .textoImagenContenido:hover {
+    opacity: 0.8; }
+
+/*Animaciones de Productos*/
+.imagenAnimacion {
+  display: flex;
+  align-items: center;
+  flex-direction: column; }
+
+.imagenDescuentos {
+  display: flex;
+  align-items: center;
+  flex-direction: column; }
+
+.precioDescuento {
+  text-decoration: line-through;
+  background-color: #e2d2c7; }
+
+.logoNav {
+  animation-name: logo;
+  animation-duration: 3s;
+  animation-iteration-count: infinite; }
+
+@keyframes logo {
+  0% {
+    opacity: 0; }
+  50% {
+    opacity: 0.5; }
+  100% {
+    opacity: 1; } }
+
+/*aplicado a nosotros.html*/
+/*solo para el texto de notros porque es mas largo*/
+.textoPrincipalNosotros {
+  color: #797979;
+  text-align: justify;
+  line-height: 150%;
+  font-family: "Hind", sans-serif;
+  padding: 30px; }
+
+.graciasNosotros {
+  font-family: "Montserrat", sans-serif;
+  color: gray;
+  font-weight: bold;
+  font-size: 150%;
+  text-align: center;
+  letter-spacing: 20px; }
+
+.imagenNosotros img {
+  width: 600px;
+  padding: 20px; }
+
+.animate__backInDown {
+  animation-duration: 2s; }
+
+.animate__rotateInDownRight {
+  animation-duration: 2s; }
+
+/*Aplicado a Preguntas Frecuentes*/
+.estiloAcordion {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold; }
+  .estiloAcordion:not(.collapsed) {
+    background-color: #e2d2c7;
+    font-family: "Montserrat", sans-serif;
+    color: gray;
+    font-weight: bold; }
+  .estiloAcordion:focus {
+    border-color: #e2d2c7;
+    box-shadow: none; }
+
+.cuerpoAcordion {
+  font-family: "Montserrat", sans-serif;
+  color: gray; }
+
+/*Aplicado a Contactanos*/
+.wathsapp a {
+  color: white;
+  font-family: "Hind", sans-serif; }
+  .wathsapp a:hover {
+    background-color: #e2d2c7;
+    color: white; }
+
+.ubicacionContacto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Hind", sans-serif;
+  background-color: #E7E7E6;
+  margin-top: 10px;
+  color: black;
+  font-weight: lighter; }
+  .ubicacionContacto p {
+    margin: 0;
+    padding-bottom: 2px; }
+  .ubicacionContacto:hover {
+    background-color: #e2d2c7;
+    color: white; }
+
+.subtituloContacto p {
+  text-align: center;
+  font-size: 160%;
+  color: gray;
+  font-family: "Montserrat", sans-serif;
+  background: #e2d2c7;
+  margin: 10px 102px 10px 102px; }
+
+.estiloFormulario {
+  background-color: #e2d2c7;
+  font-family: "Montserrat", sans-serif;
+  color: gray;
+  font-size: 110%; }
+
+.eMailSize {
+  width: 100%; }
+
+.btnForm {
+  margin: 10px;
+  background: darkcyan;
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  border: 0; }
+
+.textoContacto {
+  text-align: center;
+  color: white;
+  background-color: darkcyan;
+  margin-top: 10px; }
+
+/*Tamanio Celular*/
+@media (max-width: 575.98px) {
+  body {
+    padding-bottom: 0; }
+  /*Barra de navigacion*/
+  .estiloNav {
+    position: relative;
+    font-size: 100%;
+    min-width: 21.5rem;
+    text-align: center;
+    position: 0; }
+    .estiloNav li {
+      width: 100% !important; }
+  .logoNav img {
+    width: 200px; }
+  .estiloSubmenu {
+    position: absolute !important;
+    font-size: 100%;
+    min-width: 21.5rem;
+    text-align: center;
+    position: 0; }
+  /*Footer*/
+  footer {
+    position: relative; }
+  .footerMaxSize {
+    display: none; }
+  .estiloRedes {
+    display: flex;
+    justify-content: start;
+    margin-top: 20px; }
+    .estiloRedes ul {
+      margin-right: 160px; }
+      .estiloRedes ul li {
+        padding: 30%; }
+  .estiloRedesBstp5 {
+    display: flex;
+    justify-content: start;
+    margin-top: 20px; }
+    .estiloRedesBstp5 ul {
+      margin-right: 200px; }
+      .estiloRedesBstp5 ul li {
+        padding: 70%; }
+  .derechosReservados p {
+    margin-top: 12px; }
+  /*Aplicado al index*/
+  .subtitulo {
+    font-family: "Hind", sans-serif;
+    color: gray;
+    font-size: 90%;
+    text-align: end;
+    background-color: #c2bebe;
+    margin: 2%; }
+  .tamanioCardsIndex {
+    margin-left: 30px; }
+  .contenedorCards {
+    display: flex;
+    justify-content: space-between; }
+  .carouselMaxSize {
+    display: none; }
+  .ubicacionCards {
+    width: 100%; }
+  /*Aplicado a todos los titulos menos en Index*/
+  .titulosFondo {
+    height: 240px; }
+  /*Aplicado a Productos*/
+  .seccionImagenes {
+    display: grid;
+    grid-template-columns: auto; }
+  .categoriasAside {
+    display: none; }
+  .grillaProductos {
+    grid-template-areas: "productosGrillaproductosGrilla"
+ " productosGrilla  productosGrilla"
+ "productosDescuentos productosDescuentos"
+ " productosDescuentos productosDescuentos";
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-column-gap: 0;
+    grid-row-gap: 10px; }
+  /*Aplicado a Nosotros*/
+  .imagenNosotros img {
+    width: 385px; }
+  /*Aplicado a Contactos*/
+  .subtituloContacto p {
+    font-size: 125%;
+    margin: 0px 0px 10px 0px; }
+  .formatoNewsletter {
+    display: none; }
+  .nosotrosTablet {
+    display: none; } }
+
+/*aplicado a registro*/
+
+.oculatarGracias{
+  display:none;
+ 
+}
+
+.mostrarGracias{
+  display: block;
+  background-color: darkgray;
+  margin-top: 10px;
+  text-align: center;
+
+}
+
+
+/*Tamanio Tablet*/
+@media (min-width: 576px) and (max-width: 991.98px) {
+  /*Aplicado al Index*/
+  .subtitulo {
+    margin-right: 90px; }
+  .carouselMinSize {
+    display: none; }
+  .tamanioCardsIndex img {
+    width: 100%; }
+  .ubicacionCards {
+    margin-right: 0px;
+    margin-left: 0px;
+    width: 100%; }
+  .contenedorCards {
+    display: flex;
+    justify-content: space-between; }
+  .seccionProdDestacados {
+    margin: 10px; }
+  /*Aplicado a Nosotros*/
+  .nosotrosSize {
+    display: none; }
+  .imagenNosotros img {
+    width: 100%; }
+  /*Aplicado a todos los html*/
+  .footerMinSize {
+    display: none; }
+  body {
+    padding-bottom: 0; }
+  /*Barra de navigacion*/
+  .estiloNav {
+    position: relative;
+    font-size: 150%;
+    min-width: 21.5rem;
+    text-align: center;
+    position: 0; }
+    .estiloNav li {
+      width: 100% !important; }
+  .logoNav img {
+    width: 200px; }
+  .estiloSubmenu {
+    position: absolute !important;
+    font-size: 100%;
+    min-width: 21.5rem;
+    text-align: center;
+    position: 0;
+    width: 100%; } }
+
+/*Aplicado al resto de las medidas*/
+@media (min-width: 992px) {
+  .footerMinSize {
+    display: none; }
+  .carouselMinSize {
+    display: none; }
+  .nosotrosTablet {
+    display: none; } }
