@@ -1,0 +1,9 @@
+[
+    {"id": 1, "categoria": "almohadon", "nombre": "Almohadón Tirreno", "descripcion": "almohadon natural con flecos en el medio", "imagen":"imagenes/almohadonTirreno.jpg", "color": "Beige", "precio": 900, "stock": 10},
+    {"id": 2, "categoria": "bolsoLona", "nombre": "Bolso y Lona Amelie", "descripcion": " Bolso y lona rayados", "imagen":"imagenes/bolsoLona.jpg", "color": "Gris", "precio": 950, "stock": 30},
+    {"id": 3, "categoria": "bolsoLona", "nombre": "Bolso y Lona Ramona", "descripcion": "Bolso y lona rayados", "imagen":"imagenes/bolsoBeige.jpg", "color": "Beige", "precio": 900, "stock": 20},
+    {"id": 4, "categoria": "manta", "nombre": "Manta Panal", "descripcion": "Manta de wafle rustico color rosa", "imagen":"imagenes/cuidados1.jpg", "color": "Beige", "precio": 1000, "stock": 10},
+    {"id": 5, "categoria": "mantel", "nombre": "Mantel Nepal", "descripcion": "mantel estampado color beige", "imagen": "imagenes/mantelNepal.jpg", "color": "Beige", "precio": 900, "stock": 30},
+    {"id": 6, "categoria": "almohadon", "nombre": "Almohadón Ramona", "descripcion": "almohadon rosa claro con un prelavado y arrugado", "imagen":"imagenes/almohadonRamona.jpg", "color": "Rosa", "precio": 990, "stock": 40}
+
+]
